@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "One Click Screen Recorder",
+  "description": "点击扩展图标，3 秒倒计时后开始录制当前标签页，再次点击结束并保存到本地。",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "downloads",
+    "offscreen",
+    "scripting",
+    "storage",
+    "tabCapture"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    },
+    "default_title": "一键录屏"
+  }
+}
