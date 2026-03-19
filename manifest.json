@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "One Click Screen Recorder",
-  "description": "点击扩展图标，3 秒倒计时后开始录制当前标签页，再次点击结束并保存到本地。",
+  "name": "TabRecorder",
+  "description": "click to record the current tab, another click to stop and save",
   "version": "1.0.0",
   "icons": {
     "16": "icons/icon-16.png",
@@ -26,6 +26,6 @@
       "16": "icons/icon-16.png",
       "32": "icons/icon-32.png"
     },
-    "default_title": "一键录屏"
+    "default_title": "Tab recorder"
   }
 }

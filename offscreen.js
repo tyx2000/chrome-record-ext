@@ -573,7 +573,8 @@ function createRecordingSessionId(tabId) {
   return `${tabId}-${Date.now()}-${random}`;
 }
 
-// 构造一个可排序的文件名，并统一保存到 Downloads/recordings 目录下。
+// 构造一个可排序的文件名，并直接跟随浏览器默认下载目录。
+// Build a sortable file name and let the browser place it in the default download directory.
 function buildFileName() {
   const now = new Date();
   const parts = [
@@ -587,5 +588,5 @@ function buildFileName() {
     String(now.getSeconds()).padStart(2, "0"),
   ];
 
-  return `recordings/screen-recording-${parts.join("-")}-${time.join("-")}.webm`;
+  return `screen-recording-${parts.join("-")}-${time.join("-")}.webm`;
 }
